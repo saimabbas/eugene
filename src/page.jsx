@@ -18,11 +18,11 @@ import TourImg1 from "./assets/london.webp";
 import TourImg2 from "./assets/paris.avif";
 import TourImg3 from "./assets/australia.jpg";
 import TourImg4 from "./assets/maldives.jpeg";
-
 import TeamCard from "./teamCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
+import { Link } from "react-router-dom";
 
 import { Pagination } from "swiper/modules";
 import {
@@ -40,7 +40,7 @@ const h1Texts = [
   "FATHER AND GRANDFATHER",
 ];
 
-function App() {
+function Page() {
   const [currentBackground, setCurrentBackground] = useState(0);
 
   useEffect(() => {
@@ -52,22 +52,22 @@ function App() {
 
     return () => clearInterval(intervalId);
   }, []);
-
   return (
     <div className="eugene">
       <main className="home-page">
         <section
           className="hero-header-box"
+          id="home"
           style={{ backgroundImage: `url(${backgrounds[currentBackground]})` }}
         >
           <div className="box">
             <header>
               <div className="header-content">
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Team</a>
-                <a href="">Trip</a>
-                <a href="">Contact</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#trips">Trip</a>
+                <a href="#contact">Contact</a>
               </div>
             </header>
             <div className="hero-section">
@@ -76,7 +76,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="about-us">
+        <section className="about-us" id="about">
           <div className="box">
             <div className="about-us-content">
               <div className="au-left">
@@ -110,7 +110,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="team-section">
+        <section className="team-section" id="team">
           <div className="box">
             <div className="team-content">
               <div className="heading-sec">
@@ -152,7 +152,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="team-section">
+        <section className="team-section" id="trips">
           <div className="box">
             <div className="team-content">
               <div className="heading-sec">
@@ -173,6 +173,7 @@ function App() {
                     <div className="rt-swiper-content">
                       <img src={TourImg1} alt="" />
                       <div className="rt-swiper-bottom">
+                        <h4>LONDON</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -180,10 +181,17 @@ function App() {
                             <BsStarFill />
                             <BsStarFill />
                             <BsStarFill />
+                            <span>(15)</span>
                           </div>
-                          <p>4.99 Rating</p>
                         </div>
-                        <h4>LONDON</h4>
+                        <p>
+                          <b>Days:</b> 09
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. At, nulla quidem dolores molestiae ducimus qui
+                          animi alias sed nobis non.
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -191,6 +199,7 @@ function App() {
                     <div className="rt-swiper-content">
                       <img src={TourImg2} alt="" />
                       <div className="rt-swiper-bottom">
+                        <h4>PARIS</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -198,10 +207,17 @@ function App() {
                             <BsStarFill />
                             <BsStarFill />
                             <BsStarFill />
+                            <span>(15)</span>
                           </div>
-                          <p>4.99 Rating</p>
                         </div>
-                        <h4>PARIS</h4>
+                        <p>
+                          <b>Days:</b> 09
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. At, nulla quidem dolores molestiae ducimus qui
+                          animi alias sed nobis non.
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -209,6 +225,7 @@ function App() {
                     <div className="rt-swiper-content">
                       <img src={TourImg3} alt="" />
                       <div className="rt-swiper-bottom">
+                        <h4>AUSTRALIA</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -216,10 +233,17 @@ function App() {
                             <BsStarFill />
                             <BsStarFill />
                             <BsStarFill />
+                            <span>(15)</span>
                           </div>
-                          <p>4.99 Rating</p>
                         </div>
-                        <h4>AUSTRALIA</h4>
+                        <p>
+                          <b>Days:</b> 09
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. At, nulla quidem dolores molestiae ducimus qui
+                          animi alias sed nobis non.
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -227,6 +251,7 @@ function App() {
                     <div className="rt-swiper-content">
                       <img src={TourImg4} alt="" />
                       <div className="rt-swiper-bottom">
+                        <h4>MALDIVES</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -234,10 +259,17 @@ function App() {
                             <BsStarFill />
                             <BsStarFill />
                             <BsStarFill />
+                            <span>(15)</span>
                           </div>
-                          <p>4.99 Rating</p>
                         </div>
-                        <h4>MALDIVES</h4>
+                        <p>
+                          <b>Days:</b> 09
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. At, nulla quidem dolores molestiae ducimus qui
+                          animi alias sed nobis non.
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>
@@ -245,6 +277,7 @@ function App() {
                     <div className="rt-swiper-content">
                       <img src={TourImg1} alt="" />
                       <div className="rt-swiper-bottom">
+                        <h4>LONDON</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -252,20 +285,29 @@ function App() {
                             <BsStarFill />
                             <BsStarFill />
                             <BsStarFill />
+                            <span>(15)</span>
                           </div>
-                          <p>4.99 Rating</p>
                         </div>
-                        <h4>LONDON</h4>
+                        <p>
+                          <b>Days:</b> 09
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. At, nulla quidem dolores molestiae ducimus qui
+                          animi alias sed nobis non.
+                        </p>
                       </div>
                     </div>
                   </SwiperSlide>
                 </Swiper>
-                <button className="main-btn">View All Trips</button>
+                <Link to="/trip">
+                  <button className="main-btn">View All Trips</button>
+                </Link>
               </div>
             </div>
           </div>
         </section>
-        <section className="contact-us">
+        <section className="contact-us" id="contact">
           <div className="box">
             <div className="about-us-content cu-content">
               <div className="au-left cu-left">
@@ -321,9 +363,22 @@ function App() {
             </div>
           </div>
         </section>
+        <div className="map-section">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3035.840729826542!2d-74.27171308756289!3d40.45666197859065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb98b7c00d93%3A0xe7745914ebf3144c!2sSpinnaker%20Pointe%20Clubhouse!5e0!3m2!1sen!2svi!4v1703189027589!5m2!1sen!2svi"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+        <section className="footer-section">
+          <div className="box">
+            <div className="footer-content">
+              <p>© 2017 Road Travel. All Rights Reserved</p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
 }
 
-export default App;
+export default Page;
