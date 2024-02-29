@@ -9,8 +9,6 @@ const TeamCard = ({ name, role, imageUrl }) => {
         <img src={imageUrl} alt={name} />
       </div>
       <div className="captionBox">
-        <h3>{name}</h3>
-        <p>{role}</p>
         <div className="social-links">
           <a href="#">
             <BsFacebook />
@@ -21,6 +19,10 @@ const TeamCard = ({ name, role, imageUrl }) => {
           <a href="#">
             <BsTwitterX />
           </a>
+        </div>
+        <div className="captiontext">
+          <h3>{name}</h3>
+          <p>{role}</p>
         </div>
       </div>
     </div>
