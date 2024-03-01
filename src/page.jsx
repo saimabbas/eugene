@@ -17,9 +17,10 @@ import TeamImg8 from "./assets/liz.png";
 import TeamImg9 from "./assets/julia.png";
 import TeamImg10 from "./assets/mocha.png";
 import TourImg1 from "./assets/london.webp";
-import TourImg2 from "./assets/paris.avif";
+import TourImg5 from "./assets/PARIS-TRIP.jpg";
 import TourImg3 from "./assets/australia.jpg";
-import TourImg4 from "./assets/maldives.jpeg";
+import TourImg4 from "./assets/imgtrip1.jpg";
+import TourImg6 from "./assets/london-1.jpg";
 import TeamCard from "./teamCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -200,10 +201,10 @@ function Page() {
                     </div>
                   </div>
                   <div className="rt-swiper-content rts-2">
-                    <img src={TourImg2} alt="" />
+                    <img src={TourImg4} alt="" />
                     <div className="rt-swiper-bottom">
                       <div className="rtb-left">
-                        <h4>LONDON</h4>
+                        <h4>MALDIVES</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -224,7 +225,7 @@ function Page() {
                     <img src={TourImg3} alt="" />
                     <div className="rt-swiper-bottom">
                       <div className="rtb-left">
-                        <h4>LONDON</h4>
+                        <h4>AUSTRALIA</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -242,10 +243,10 @@ function Page() {
                     </div>
                   </div>
                   <div className="rt-swiper-content">
-                    <img src={TourImg3} alt="" />
+                    <img src={TourImg5} alt="" />
                     <div className="rt-swiper-bottom">
                       <div className="rtb-left">
-                        <h4>LONDON</h4>
+                        <h4>PARIS</h4>
                         <div className="rating-stars">
                           <div className="rating-svg-box">
                             <BsStarFill />
@@ -263,7 +264,7 @@ function Page() {
                     </div>
                   </div>
                   <div className="rt-swiper-content">
-                    <img src={TourImg1} alt="" />
+                    <img src={TourImg6} alt="" />
                     <div className="rt-swiper-bottom">
                       <div className="rtb-left">
                         <h4>LONDON</h4>

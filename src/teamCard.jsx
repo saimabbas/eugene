@@ -9,7 +9,7 @@ const TeamCard = ({ name, role, imageUrl }) => {
         <img src={imageUrl} alt={name} />
       </div>
       <div className="captionBox">
-        <div className="social-links">
+        {/* <div className="social-links">
           <a href="#">
             <BsFacebook />
           </a>
@@ -19,10 +19,17 @@ const TeamCard = ({ name, role, imageUrl }) => {
           <a href="#">
             <BsTwitterX />
           </a>
-        </div>
+        </div> */}
         <div className="captiontext">
-          <h3>{name}</h3>
-          <p>{role}</p>
+          <div className="ctcbox">
+            <h3>{name}</h3>
+            <p>{role}</p>
+          </div>
+          <div className="social-links">
+            <a href="#">
+              <BsInstagram />
+            </a>
+          </div>
         </div>
       </div>
     </div>

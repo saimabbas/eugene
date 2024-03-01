@@ -249,7 +249,7 @@ section {
   );
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: space-between;
   height: 100%;
   width: 100%;
@@ -260,18 +260,27 @@ section {
 }
 .captiontext {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 2rem 2rem 2rem;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.ctcbox {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin: 0 0 2rem 2rem;
 }
-.captiontext h3 {
+.ctcbox h3 {
   font-size: 2rem;
   color: var(--white);
   font-weight: 500;
   margin: 0;
 }
-.captiontext p {
+.ctcbox p {
   font-size: 1.45rem;
   color: var(--white);
   font-weight: 400;
@@ -390,12 +399,12 @@ section {
   border-radius: 1.25rem;
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  max-height: 450px;
   position: relative;
 }
 .rt-swiper-content img {
   width: 100%;
   height: 100%;
-  max-height: 450px;
   object-fit: cover;
   border-radius: 1.25rem;
 }
@@ -457,7 +466,7 @@ section {
   margin: 0;
 }
 .rt-swiper-bottom p {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: 500;
   color: var(--white);
   margin: 0;
