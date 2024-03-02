@@ -3,9 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-}
-body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 :root {
@@ -358,7 +362,7 @@ section {
   border: 1px solid var(--white);
   padding: 1.5rem;
   border-radius: 0.75rem;
-  width: 93%;
+  width: 100%;
   font-size: 1.7rem;
   color: var(--black);
   font-weight: 500;
@@ -497,6 +501,9 @@ section {
 }
 
 /* MAP SECTION */
+.map-section {
+  width: 100%;
+}
 .map-section iframe {
   width: 100%;
   height: 250px;
@@ -507,6 +514,7 @@ section {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1rem;
+  width: 100%;
 }
 
 .recent-trip-container {
