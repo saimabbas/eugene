@@ -21,7 +21,6 @@ import TourImg5 from "./assets/PARIS-TRIP.jpg";
 import TourImg3 from "./assets/australia.jpg";
 import TourImg4 from "./assets/imgtrip1.jpg";
 import TourImg6 from "./assets/london-1.jpg";
-import TeamCard from "./teamCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -37,6 +36,10 @@ import {
   BsStarFill,
   BsTwitterX,
 } from "react-icons/bs";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Teamcard from "./components/teamCard";
+import Tripcard from "./components/Tripcard";
 
 const backgrounds = [bgImg4];
 
@@ -61,33 +64,7 @@ function Page() {
   return (
     <div className="eugene">
       <main className="home-page">
-        <header>
-          <div className="box-lg">
-            <div className="header-content">
-              <div className="header-left">
-                <h4>Family Blog</h4>
-              </div>
-              <div className="header-middle">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#team">Team</a>
-                <a href="#trips">Trip</a>
-                <a href="#contact">Contact</a>
-              </div>
-              <div className="header-right">
-                <a href="#">
-                  <BsFacebook />
-                </a>
-                <a href="#">
-                  <BsInstagram />
-                </a>
-                <a href="#">
-                  <BsTwitterX />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Header />
         <section
           className="hero-header-box"
           id="home"
@@ -137,32 +114,32 @@ function Page() {
                 <h3>Our Team</h3>
               </div>
               <div className="team-member">
-                <TeamCard
+                <Teamcard
                   name="GEORGE"
                   role="Patriach and backbone of the family"
                   imageUrl={TeamImg1}
                 />
-                <TeamCard
+                <Teamcard
                   name="VALENTINA"
                   role="Commander in Chief"
                   imageUrl={TeamImg2}
                 />
-                <TeamCard
+                <Teamcard
                   name="NATASHA"
                   role="Family shrink and free spirit"
                   imageUrl={TeamImg3}
                 />
-                <TeamCard name="OLGA" role="lorem ipsum" imageUrl={TeamImg4} />
-                <TeamCard name="VOVA" role="lorem ipsum" imageUrl={TeamImg5} />
-                <TeamCard
+                <Teamcard name="OLGA" role="lorem ipsum" imageUrl={TeamImg4} />
+                <Teamcard name="VOVA" role="lorem ipsum" imageUrl={TeamImg5} />
+                <Teamcard
                   name="EUGENE"
                   role="Innovator and adventure seeker"
                   imageUrl={TeamImg6}
                 />
-                <TeamCard name="ANTON" role="lorem ipsum" imageUrl={TeamImg7} />
-                <TeamCard name="LIZ" role="lorem ipsum" imageUrl={TeamImg8} />
-                <TeamCard name="JULIA" role="lorem ipsum" imageUrl={TeamImg9} />
-                <TeamCard
+                <Teamcard name="ANTON" role="lorem ipsum" imageUrl={TeamImg7} />
+                <Teamcard name="LIZ" role="lorem ipsum" imageUrl={TeamImg8} />
+                <Teamcard name="JULIA" role="lorem ipsum" imageUrl={TeamImg9} />
+                <Teamcard
                   name="MOCHA"
                   role="Ball rescuer and loves everyone"
                   imageUrl={TeamImg10}
@@ -179,111 +156,19 @@ function Page() {
               </div>
               <div className="recent-swiper-box">
                 <div className="rs-grid-box">
-                  <div className="rt-swiper-content rts-1">
-                    <img src={TourImg1} alt="" />
-                    <div className="rt-swiper-bottom">
-                      <div className="rtb-left">
-                        <h4>LONDON</h4>
-                        <div className="rating-stars">
-                          <div className="rating-svg-box">
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <span>(15)</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <b>Days:</b> 09
-                      </p>
-                    </div>
-                  </div>
-                  <div className="rt-swiper-content rts-2">
-                    <img src={TourImg4} alt="" />
-                    <div className="rt-swiper-bottom">
-                      <div className="rtb-left">
-                        <h4>MALDIVES</h4>
-                        <div className="rating-stars">
-                          <div className="rating-svg-box">
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <span>(15)</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <b>Days:</b> 09
-                      </p>
-                    </div>
-                  </div>
-                  <div className="rt-swiper-content">
-                    <img src={TourImg3} alt="" />
-                    <div className="rt-swiper-bottom">
-                      <div className="rtb-left">
-                        <h4>AUSTRALIA</h4>
-                        <div className="rating-stars">
-                          <div className="rating-svg-box">
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <span>(15)</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <b>Days:</b> 09
-                      </p>
-                    </div>
-                  </div>
-                  <div className="rt-swiper-content">
-                    <img src={TourImg5} alt="" />
-                    <div className="rt-swiper-bottom">
-                      <div className="rtb-left">
-                        <h4>PARIS</h4>
-                        <div className="rating-stars">
-                          <div className="rating-svg-box">
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <span>(15)</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <b>Days:</b> 09
-                      </p>
-                    </div>
-                  </div>
-                  <div className="rt-swiper-content">
-                    <img src={TourImg6} alt="" />
-                    <div className="rt-swiper-bottom">
-                      <div className="rtb-left">
-                        <h4>LONDON</h4>
-                        <div className="rating-stars">
-                          <div className="rating-svg-box">
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <BsStarFill />
-                            <span>(15)</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p>
-                        <b>Days:</b> 09
-                      </p>
-                    </div>
-                  </div>
+                  <Tripcard
+                    trip="LONDON"
+                    TourImg={TourImg1}
+                    className="rt-swiper-content rts-1"
+                  />
+                  <Tripcard
+                    trip="MALDIVES"
+                    TourImg={TourImg4}
+                    className="rt-swiper-content rts-2"
+                  />
+                  <Tripcard trip="AUSTRALIA" TourImg={TourImg3} />
+                  <Tripcard trip="PARIS" TourImg={TourImg5} />
+                  <Tripcard trip="LONDON" TourImg={TourImg6} />
                 </div>
                 <Link to="/trip">
                   <button className="main-btn">View All Trips</button>
@@ -370,13 +255,7 @@ function Page() {
             allowfullscreen=""
           ></iframe>
         </div> */}
-        <section className="footer-section">
-          <div className="box">
-            <div className="footer-content">
-              <p>© 2017 Road Travel. All Rights Reserved</p>
-            </div>
-          </div>
-        </section>
+        <Footer />
       </main>
     </div>
   );
