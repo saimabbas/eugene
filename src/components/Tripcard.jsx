@@ -1,10 +1,11 @@
 import React from "react";
 import "../home.css";
 import { BsStarFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Tripcard = ({ trip, TourImg, className }) => {
   return (
-    <div className={`rt-swiper-content ${className}`}>
+    <Link to="#" className={`rt-swiper-content ${className}`}>
       <img src={TourImg} alt="" />
       <div className="rt-swiper-bottom">
         <div className="rtb-left">
@@ -24,7 +25,7 @@ const Tripcard = ({ trip, TourImg, className }) => {
           <b>Days:</b> 09
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

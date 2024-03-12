@@ -81,6 +81,7 @@ header {
 }
 .header-left h4 {
   font-size: 2rem;
+  font-weight: 600;
 }
 
 /* HERO SECTION  */
@@ -266,8 +267,8 @@ section {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin: 0 2rem 2rem 2rem;
-  width: 90%;
+  padding: 0 2rem 2rem 2rem;
+  width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -421,7 +422,7 @@ section {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  width: 92%;
+  width: 99%;
   /* background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.5),
@@ -526,8 +527,211 @@ section {
 .recent-trip-container .rt-swiper-content {
   margin: 0;
 }
-
+/* MOBILE MENU  */
+.mob-hamburger {
+  font-size: 2.75rem;
+  color: var(--black);
+  display: none;
+}
+.mobile-menu {
+  padding: 2rem;
+  background-color: var(--black);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.mobile-menu-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.mobile-menu-top h4 {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 600;
+}
+.mobile-menu-top svg {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+.mobile-menu-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  width: 100%;
+  position: relative;
+  z-index: 1000;
+}
+.mobile-menu-bottom a {
+  font-size: 2.2rem;
+  color: var(--white);
+  font-weight: 400;
+  margin: 0;
+}
+.header-right-mob {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+.header-right-mob a svg {
+  font-size: 2rem;
+  color: var(--black);
+}
 /* RESPONSIVENESS */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
+  .box-lg {
+    padding: 0 2rem;
+  }
+  .box {
+    padding: 0 2rem;
+  }
+  .header-middle {
+    gap: 3.5rem;
+  }
+  .header-middle a {
+    font-size: 1.65rem;
+  }
+  .hero-section h1 {
+    font-size: 7rem;
+  }
+  .ctcbox h3 {
+    font-size: 1.8rem;
+  }
+  .captiontext {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .ctcbox p {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-middle {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+  .mob-hamburger {
+    display: block;
+  }
+  .team-member {
+    grid-template-columns: 1fr 1fr;
+  }
+  .rs-grid-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-us-map {
+    grid-template-columns: 1fr;
+  }
+  .hero-section h1 {
+    font-size: 6rem;
+  }
+  .hero-section h4 {
+    font-size: 2rem;
+  }
+  .au-left h5 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .team-member {
+    grid-template-columns: 1fr;
+  }
+  .rs-grid-box {
+    grid-template-columns: 1fr;
+    gap: 1rem 0;
+  }
+  .hero-header-box {
+    height: 60vh;
+  }
+  .hero-section h1 {
+    font-size: 4rem;
+    line-height: 60px;
+  }
+  .hero-section h4 {
+    font-size: 1.8rem;
+  }
+  .hero-section button {
+    margin-top: 2.5rem;
+  }
+  section {
+    padding: 8rem 0 0 0;
+  }
+  .au-left {
+    justify-content: center;
+  }
+  .au-left h5 {
+    font-size: 2.75rem;
+  }
+  .au-left h6 {
+    text-align: center;
+    font-size: 1.65rem;
+  }
+  .au-right img {
+    height: 100%;
+  }
+  .about-us-content {
+    grid-gap: 5rem;
+    max-width: 100%;
+  }
+  .heading-sec h3 {
+    font-size: 2.75rem;
+  }
+  .team-member {
+    margin-top: 3rem;
+  }
+  .rt-swiper-content img {
+    border-radius: 0.75rem;
+  }
+  .rt-swiper-bottom h4 {
+    font-size: 1.8rem;
+  }
+  .rating-svg-box svg {
+    font-size: 1.25rem;
+  }
+  .rt-swiper-bottom p {
+    font-size: 1.5rem;
+  }
+  .contact-us-map {
+    grid-gap: 5rem;
+    max-width: 100%;
+  }
+  .au-right.cu-right {
+    padding: 2rem;
+  }
+  .au-right.cu-right form {
+    gap: 1.5rem;
+  }
+  .contact-us {
+    padding: 8rem 0;
+  }
+  .footer-content p {
+    font-size: 1.45rem;
+  }
+  .rt-swiper-content.rts-1 {
+    grid-column: unset;
+  }
+  .rt-swiper-content img {
+    max-height: 100%;
+    height: 25rem;
+  }
+  .rs-grid-box {
+    margin-top: 3rem;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "../home.css";
 import { BsInstagram } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Teamcard = ({ name, role, imageUrl }) => {
   return (
@@ -15,9 +16,9 @@ const Teamcard = ({ name, role, imageUrl }) => {
             <p>{role}</p>
           </div>
           <div className="social-links">
-            <a href="#">
+            <Link to="#">
               <BsInstagram />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

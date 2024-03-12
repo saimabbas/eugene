@@ -74,7 +74,9 @@ function Page() {
             <div className="hero-section">
               <h4>GEORGE MARGOLIN</h4>
               <h1>{h1Texts[currentBackground]}</h1>
-              <button className="hero-btn">Our Trips</button>
+              <Link to="/">
+                <button className="hero-btn">Our Trips</button>
+              </Link>
             </div>
           </div>
         </section>
@@ -99,7 +101,9 @@ function Page() {
                   ipsam voluptate maiores earum, dicta in quod tenetur
                   voluptatibus sapiente ipsum distinctio ipsa deleniti,
                 </p>
-                <button className="main-btn">Family Tree</button>
+                <Link to="#">
+                  <button className="main-btn">Family Tree</button>
+                </Link>
               </div>
               <div className="au-right">
                 <img src={famImg} alt="" />
@@ -249,12 +253,6 @@ function Page() {
             </div>
           </div>
         </section>
-        {/* <div className="map-section">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3035.840729826542!2d-74.27171308756289!3d40.45666197859065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3cb98b7c00d93%3A0xe7745914ebf3144c!2sSpinnaker%20Pointe%20Clubhouse!5e0!3m2!1sen!2svi!4v1703189027589!5m2!1sen!2svi"
-            allowfullscreen=""
-          ></iframe>
-        </div> */}
         <Footer />
       </main>
     </div>
