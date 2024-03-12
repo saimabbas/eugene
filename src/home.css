@@ -582,13 +582,14 @@ section {
 }
 .header-right-mob {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 .header-right-mob a svg {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--white);
 }
 /* RESPONSIVENESS */
 
