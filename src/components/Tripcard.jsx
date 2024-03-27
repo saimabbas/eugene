@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Tripcard = ({ trip, TourImg, className }) => {
   return (
-    <Link to="#" className={`rt-swiper-content ${className}`}>
+    <Link to="/tripinner" className={`rt-swiper-content ${className}`}>
       <img src={TourImg} alt="" />
       <div className="rt-swiper-bottom">
         <div className="rtb-left">
