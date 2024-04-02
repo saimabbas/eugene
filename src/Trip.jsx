@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
-import bgImg4 from "./assets/bg-img-4.jpg";
+import bgImg4 from "./assets/bg-img-4-min.jpg";
 import TourImg1 from "./assets/london.webp";
-import TourImg5 from "./assets/PARIS-TRIP.jpg";
-import TourImg3 from "./assets/australia.jpg";
-import TourImg6 from "./assets/london-1.jpg";
-import TourImg4 from "./assets/imgtrip1.jpg";
-import TourImg7 from "./assets/london-2.jpg";
+import TourImg5 from "./assets/PARIS-TRIP-min.jpg";
+import TourImg3 from "./assets/australia-min.jpg";
+import TourImg6 from "./assets/london-1-min.jpg";
+import TourImg4 from "./assets/imgtrip1-min.jpg";
+import TourImg7 from "./assets/london-2-min.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";

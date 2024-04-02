@@ -11,8 +11,8 @@ import {
 } from "react-icons/bs";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import TourImg1 from "./assets/london.webp";
-import TourImg3 from "./assets/australia.jpg";
-import TourImg4 from "./assets/imgtrip1.jpg";
+import TourImg3 from "./assets/australia-min.jpg";
+import TourImg4 from "./assets/imgtrip1-min.jpg";
 import Footer from "./components/Footer";
 
 const TripInner = () => {
